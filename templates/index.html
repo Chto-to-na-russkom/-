@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Творожок "Замайка"</title>
+</head>
+<body>
+    <h1>Вычисление вашего веса на планетах солнечной системы</h1>
+    <form method="post">
+        Введите ваш вес: <input type="number" name="ves" required><br>
+        <input type="submit" value="Рассчитать">
+    </form>
+    {% if volume %}
+        <p>Вес на Меркурии: {{ volume }} кг</p>
+        <p>Вес на Венере: {{ volume1 }} кг</p>
+        <p>Вес на Марсе: {{ volume2 }} кг</p>
+        <p>Вес на Юпитере: {{ volume3 }} кг</p>
+        <p>Вес на Сатурн: {{ volume4 }} кг</p>
+        <p>Вес на Уран: {{ volume5 }} кг</p>
+        <p>Вес на Нептуне: {{ volume6 }} кг</p>
+    {% endif %}
+</body>
+</html>
