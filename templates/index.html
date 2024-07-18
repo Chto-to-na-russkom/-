@@ -6,11 +6,11 @@
 <body>
     <h1>Вычисление вашего веса на планетах солнечной системы</h1>
     <form method="post">
-        Введите ваш вес: <input type="number" name="ves" required><br>
+        <b>Введите ваш вес: <input type="number" name="ves" required><br></b>
         <input type="submit" value="Рассчитать">
     </form>
     {% if volume %}
-        <p>Вес на Меркурии: {{ volume }} кг <br>Вес на Венере: {{ volume1 }} кг <br>Вес на Марсе: {{ volume2 }} кг <br>Вес на Юпитере: {{ volume3 }} кг <br>Вес на Сатурн: {{ volume4 }} кг <br>Вес на Уран: {{ volume5 }} кг <br> Вес на Нептуне: {{ volume6 }} кг</p>
+        <p><b>Вес на Меркурии: {{ volume }} кг <br>Вес на Венере: {{ volume1 }} кг <br>Вес на Марсе: {{ volume2 }} кг <br>Вес на Юпитере: {{ volume3 }} кг <br>Вес на Сатурн: {{ volume4 }} кг <br>Вес на Уран: {{ volume5 }} кг <br> Вес на Нептуне: {{ volume6 }} кг</b></p>
     {% endif %}
 </body>
 </html>
